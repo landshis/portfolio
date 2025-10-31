@@ -1,0 +1,195 @@
+/* =========
+   Base / Reset
+   ========= */
+   *,
+   *::before,
+   *::after { 
+     box-sizing: border-box; 
+     margin: 0; 
+     padding: 0; 
+   }
+   
+   html { scroll-behavior: smooth; }
+   
+   body {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+     color: #1f2937;             /* slate-800 text */
+     background: #A8DCAB;        /* Celadon green for entire page */
+     line-height: 1.7;
+     font-size: 18px;            /* larger global text (name has its own size) */
+   }
+   
+   /* Links */
+   a { color: #2563eb; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+   
+   /* =========
+      Header / Hero
+      ========= */
+   .hero {
+     text-align: center;
+     padding: 72px 20px 56px;
+     background: #91C792;        /* slightly darker celadon for header */
+     color: #0f172a;             /* dark navy-gray for contrast */
+   }
+   
+   .nav {
+     margin-bottom: 20px;
+     display: flex;
+     gap: 18px;
+     justify-content: center;
+     flex-wrap: wrap;
+     font-size: 1.05rem;
+   }
+   .nav a { 
+     color: #1f2937; 
+     font-weight: 600; 
+   }
+   .nav a:hover { 
+     color: #14532d;             /* deep forest green on hover */
+   }
+   
+   .hero-content h1 {
+     font-size: 2.8rem;
+     margin: 10px 0 6px;
+     line-height: 1.15;
+   }
+   
+   .subtitle {
+     font-size: 1.4rem;
+     font-weight: 500;
+     color: #1e293b;
+   }
+   
+   .contact-row {
+     margin-top: 6px;
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   
+   .profile-img {
+     width: 160px;
+     height: 160px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 14px;
+     border: 3px solid #14532d;  /* green border to blend with celadon */
+   }
+   
+   /* =========
+      Sections
+      ========= */
+   .section {
+     padding: 36px 20px;
+     max-width: 900px;
+     margin: 0 auto;
+     background: #ffffffcc;       /* semi-white panels for clarity */
+     border-radius: 12px;
+     margin-bottom: 20px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+   }
+   
+   h2 { 
+     font-size: 2rem; 
+     margin-bottom: 8px; 
+     color: #14532d;              /* section title green */
+   }
+   
+   h3 { 
+     font-size: 1.25rem; 
+     margin: 10px 0 6px; 
+     color: #111827; 
+   }
+   
+   .stack { 
+     color: #4b5563; 
+     margin-bottom: 6px; 
+   }
+   
+   .section ul { 
+     margin-left: 18px; 
+     line-height: 1.6; 
+   }
+   
+   /* =========
+      Projects
+      ========= */
+   .project-list {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 18px;
+   }
+   
+   .project {
+     border: 1px solid #d1d5db;
+     border-radius: 10px;
+     padding: 16px;
+     background: #ffffffcc;       /* subtle panel over celadon */
+     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+   }
+   
+   .proj-head {
+     display: flex;
+     gap: 12px;
+     align-items: baseline;
+     margin-bottom: 4px;
+   }
+   
+   .proj-head .date {
+     margin-left: auto;
+     color: #374151;
+     font-size: 1rem;
+     font-weight: 600;
+   }
+   
+   /* Two-column on wider screens */
+   @media (min-width: 768px) {
+     .project-list { grid-template-columns: 1fr 1fr; }
+   }
+   
+   /* =========
+      Buttons
+      ========= */
+   .view-btn {
+     display: inline-block;
+     margin-top: 10px;
+     padding: 10px 16px;
+     background: #2563eb;         /* blue for contrast */
+     color: #ffffff !important;   /* white text */
+     border-radius: 6px;
+     text-decoration: none;
+     font-weight: 700;
+     text-align: center;
+     transition: background 0.25s ease;
+   }
+   .view-btn:hover { 
+     background: #1d4ed8; 
+   }
+   
+   /* =========
+      Education Spacing
+      ========= */
+   #education ul {
+     margin-bottom: 16px;         /* space before coursework */
+   }
+   
+   #education p strong {
+     display: inline-block;
+     margin-top: 8px;             /* line space above coursework text */
+   }
+   
+   /* =========
+      Footer
+      ========= */
+   .footer {
+     text-align: center;
+     padding: 24px;
+     background: #A8DCAB;         /* Celadon green footer */
+     color: #1e293b;
+     font-size: 1rem;
+     font-weight: 500;
+     border-top: 2px solid #7fb77e; /* subtle top divider */
+   }
+   
